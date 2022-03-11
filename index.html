@@ -8,6 +8,32 @@
     <title>Survey Form</title>
 </head>
 <body>
-    
+    <header>
+        <h1 id="title">Service Survey Form</h1>
+        <p id="description">Share your thoughts about our service. Help us improve.</p>
+    </header>
+    <main>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" name="name" id="name" required>
+            <label for="email" id="email-label">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="age" id="number-label">Age(Must be 18+)</label>
+            <input type="number" name="age" id="number" min="18">
+            <label for="dropdown" id="dropdown-label">Which education level are you currently in?</label>
+            <select name="dropdown" id="dropdown">
+                <option value="Bachelor-degree">Bachelor Degree</option>
+                <option value="Masters">Masters</option>
+                <option value="Phd">Phd</option>
+            </select>
+            <p>Are you enrolled in a tech-related program?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="stem-button" value="Yes">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="stem-button" value="No">
+            <label for="language">Which programming language are you learning?</label>
+            <input type="checkbox" name="" id="">
+        </form>
+    </main>
 </body>
 </html>
