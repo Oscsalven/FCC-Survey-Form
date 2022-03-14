@@ -5,51 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet"> <!-- Link to the fonts -->
     <title>Survey Form</title>
 </head>
 <body>
+
     <header>
         <h1 id="title">Service Survey Form</h1>
         <p id="description">Help us improve by sharing your thoughts.</p>
     </header>
+
     <main>
         <form id="survey-form">
-            <label for="name" id="name-label">Name</label>
-            <input type="text" name="name" id="name" required>
-            <label for="email" id="email-label">Email</label>
-            <input type="email" name="email" id="email" required>
-            <label for="age" id="number-label">Age(Must be 18+)</label>
-            <input type="number" name="age" id="number" min="18">
-            <label for="dropdown" id="dropdown-label">Which education level are you currently in?</label>
-            <select name="dropdown" id="dropdown">
-                <option value="Bachelor-degree">Bachelor Degree</option>
-                <option value="Masters">Masters</option>
-                <option value="Phd">Phd</option>
-            </select>
-            <p>Are you enrolled in a tech-related program?</p>
-            <label for="yes">Yes</label>
-            <input type="radio" id="yes" name="stem-button" value="Yes">
-            <label for="no">No</label>
-            <input type="radio" id="no" name="stem-button" value="No">
-            <label for="language">Which programming language(s) are you learning?</label>
-            <input type="checkbox" name="javascript" value="javascript">
-            <label for="javascript">Javascript</label>
-            <input type="checkbox" name="python" value="python">
-            <label for="python">Python</label>
-            <input type="checkbox" name="ruby-on-rails" value="ruby-on-rails">
-            <label for="ruby-on-rails">Ruby on Rails</label>
-            <input type="checkbox" name="C++" value="C++">
-            <label for="C++">C++</label>
-            <input type="checkbox" name="Java" value="Java">
-            <label for="Java">Java</label>
-            <input type="checkbox" name="C#" value="C#">
-            <label for="C#">C#</label>
-            <input type="checkbox" name="R" value="R">
-            <label for="R">R</label>
-            <label for="">Additional Comments</label>
-            <textarea name="additional-comments" id="additional-comments" cols="30" rows="10" maxlength="140">Enter your comment...</textarea>
-            <button type="submit" id="submit">Submit</button>
+            <div id="written-section">
+                <div class="written-input">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" class="text-input" id="name" placeholder="Enter your name" autocomplete="off" required>
+                </div>
+                <div class="written-input">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" name="email" class="text-input" id="email" placeholder="Enter your email" autocomplete="off" required>
+                </div>
+                <div class="written-input">
+                    <label for="age" id="number-label">Age(Must be 18+)</label>
+                    <input type="number" name="age" class="text-input" id="number" min="18" max="99" placeholder="Enter your age(optional)">
+                </div>
+            </div>
+            <div id="dropdown-section">
+                <label for="dropdown" id="dropdown-label">Which education level are you currently in?</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Bachelor-degree">Bachelor Degree</option>
+                    <option value="Masters">Masters</option>
+                    <option value="Phd">Phd</option>
+                </select>
+            </div>
+            <div id="button-section">
+                <p>Are you enrolled in a tech-related program?: <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="stem-button" value="Yes">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="stem-button" value="No">
+                </p>
+            </div>
+            <div id="checkbox-section">
+                <p>Which programming language(s) are you learning?</p>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="javascript" value="javascript">
+                    <label for="javascript">Javascript</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="python" value="python">
+                    <label for="python">Python</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="ruby-on-rails" value="ruby-on-rails">
+                    <label for="ruby-on-rails">Ruby on Rails</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="C++" value="C++">
+                    <label for="C++">C++</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="Java" value="Java">
+                    <label for="Java">Java</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="C#" value="C#">
+                    <label for="C#">C#</label>
+                </div>
+                <div class="checkbox-input">
+                    <input type="checkbox" name="R" value="R">
+                    <label for="R">R</label>
+                </div> 
+            </div>
+            <div id="textarea-section">
+                <label for="">Additional Comments</label>
+                <textarea name="additional-comments" id="additional-comments" cols="30" rows="10" maxlength="140">Enter your comment...</textarea>
+            </div>
+            <div id="submit-section">
+                <button type="submit" id="submit">Submit</button>
+            </div>
         </form>
     </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>

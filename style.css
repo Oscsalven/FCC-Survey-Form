@@ -1,0 +1,54 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1647185255712-18b63b7e3388?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
+    font-family: 'Roboto', sans-serif;
+    color: #f9f9f3;
+}
+
+header {
+    text-align: center;
+    font-size: 4vh;
+}
+
+textarea {
+    resize: none;
+}
+
+#survey-form, #written-section, .written-input, #textarea-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.written-input {
+    gap: 1vh;
+}
+
+.text-input {
+    height: 4vh;
+    border-radius: 8px;
+    border: none;
+}
+
+#survey-form {
+    background-color: #454545;
+    width: 60%;
+    margin: auto;
+    padding: 2.5%;
+    justify-content: space-between;
+    gap: 2vh;
+}
+
+#written-section {
+    gap: 2vh;
+}
+
+#submit-section {
+    align-self: center;
+}
+
+#submit {
+    background-color: #f9f9f3;
+    border-radius: 5px;
+    border: none;
+    height: 6vh;
+    width: 12vw;
+}
