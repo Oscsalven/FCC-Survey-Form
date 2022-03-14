@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1 id="title">Service Survey Form</h1>
-        <p id="description">Share your thoughts about our service. Help us improve.</p>
+        <p id="description">Help us improve by sharing your thoughts.</p>
     </header>
     <main>
         <form id="survey-form">
@@ -31,8 +31,24 @@
             <input type="radio" id="yes" name="stem-button" value="Yes">
             <label for="no">No</label>
             <input type="radio" id="no" name="stem-button" value="No">
-            <label for="language">Which programming language are you learning?</label>
-            <input type="checkbox" name="" id="">
+            <label for="language">Which programming language(s) are you learning?</label>
+            <input type="checkbox" name="javascript" value="javascript">
+            <label for="javascript">Javascript</label>
+            <input type="checkbox" name="python" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" name="ruby-on-rails" value="ruby-on-rails">
+            <label for="ruby-on-rails">Ruby on Rails</label>
+            <input type="checkbox" name="C++" value="C++">
+            <label for="C++">C++</label>
+            <input type="checkbox" name="Java" value="Java">
+            <label for="Java">Java</label>
+            <input type="checkbox" name="C#" value="C#">
+            <label for="C#">C#</label>
+            <input type="checkbox" name="R" value="R">
+            <label for="R">R</label>
+            <label for="">Additional Comments</label>
+            <textarea name="additional-comments" id="additional-comments" cols="30" rows="10" maxlength="140">Enter your comment...</textarea>
+            <button type="submit" id="submit">Submit</button>
         </form>
     </main>
 </body>
